@@ -107,7 +107,10 @@
 				position:relative;
 				top:-15px;
 			}
-			#header h1 {
+			#fig {
+				color: #fff;
+			}
+			#fig h1 {
 				text-align:center;
 				font-size:33px;
 				letter-spacing:2px;
@@ -115,14 +118,14 @@
 				padding-bottom:10px;
 				text-shadow: 1px 1px 3px #999;
 			}
-			#header h1 span {
+			#fig h1 span {
 				display:block;
 				margin-bottom:10px;
 			}
-			#header h1 a {
+			#fig h1 a {
 				font-weight:bolder;
 			}
-			#header p {
+			#fig p {
 				text-align:center;
 				font-size: 16px;
 				letter-spacing:2px;
@@ -154,20 +157,22 @@
 				padding-top:10px;
 				padding-bottom:20px;
 				padding-left:10px;
+				background-color: #CC8808;
 			}
 			#footer p {
 				font-size:12px;
 				word-spacing:2px;
-				color:#666;
+				color:#eee;
 				text-align:center;
 			}
 			#fig {
 				padding-top:10px;
 				/*padding-bottom:20px;*/
+				background-color: #074938;
 			}
 			#fig img {
 				/*border-top: solid 3px #000;*/
-				border-bottom: solid 5px #000;
+				/*border-bottom: solid 5px #000;*/
 			}
 			#menu {
 				/*padding-bottom:30px;*/
@@ -324,15 +329,18 @@
 
 	<body>
 		<div id="main">
-			<div id="header" itemscope itemtype="http://data-vocabulary.org/Person">
-			  <h1><span style="display:block;">Homepage of </span><span itemprop="name">Erik Jan van Leeuwen</span></h1>
-			  <p><span itemprop="title">Assistant Professor</span> at <span itemprop="affiliation">Utrecht University, The Netherlands</span></p>
-			  <!--<p><span itemprop="title">Senior Researcher</span> at <span itemprop="affiliation">Max-Planck-Institut f&uuml;r Informatik, Saarbr&uuml;cken, Germany</span></p>-->
+			<div id="header" style="height:40px; background-color: #CC8808;">
 			</div>
 			
-			<div id="fig">
-			  <img src="cover.jpg" width="960" height="268" alt="Picture of Norwegian nature (Bessegen)" />
-			  <!--<img src="cover2.jpg" name="picture" width="960"  alt="Picture of the Colosseum in Rome" title="Picture of the Colosseum in Rome" />-->
+			<div id="fig" style="display: flex;">
+				<div>
+			  <img src="photo.jpg" width="200" alt="Erik Jan van Leeuwen" style="margin: 10px; margin-left:50px; border-radius: 50%;" />
+			  <div style="float:right;">
+				<div style="margin: 10px; text-align: center; width:680px; padding-top:20px;" itemscope itemtype="http://data-vocabulary.org/Person">
+			  		<h1><span style="display:block;">Homepage of </span><span itemprop="name">Erik Jan van Leeuwen</span></h1>
+					<p><span itemprop="title">Assistant Professor</span> at <span itemprop="affiliation">Utrecht University, The Netherlands</span></p>
+			    </div>
+			  </div><div style="height:38px; background-color: #074938;">&nbsp;</div></div>
 			</div>
 			
 			<div id="menu" class="clearfix">
